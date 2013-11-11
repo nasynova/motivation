@@ -11,3 +11,7 @@ group :default do
   gem 'jquery-rails'
   gem 'openteam-commons'
 end
+
+group :production do
+  gem 'pg'
+end
