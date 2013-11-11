@@ -9,4 +9,5 @@ end
 group :default do
   gem 'rails', '~>3.2.15'
   gem 'jquery-rails'
+  gem 'openteam-commons'
 end
