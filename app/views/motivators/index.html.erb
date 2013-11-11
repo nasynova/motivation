@@ -1,0 +1,27 @@
+<h1>Listing motivators</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @motivators.each do |motivator| %>
+  <tr>
+    <td><%= motivator.title %></td>
+    <td><%= motivator.body %></td>
+    <td><%= motivator.description %></td>
+    <td><%= link_to 'Show', motivator %></td>
+    <td><%= link_to 'Edit', edit_motivator_path(motivator) %></td>
+    <td><%= link_to 'Destroy', motivator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Motivator', new_motivator_path %>

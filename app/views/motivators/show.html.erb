@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @motivator.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @motivator.body %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @motivator.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_motivator_path(@motivator) %> |
+<%= link_to 'Back', motivators_path %>
